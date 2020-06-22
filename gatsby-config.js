@@ -10,9 +10,9 @@ module.exports = {
     title: `ESSENTIALS`,
     description: ` おいしい食材と食事を探求するサイト`,
     lang: `ja`,
-    siteUrl: `https://gatsby-essentials-5.netlify.app`,
+    siteUrl: `https://gatsby-web-kirin.netlify.app/`,
     locale: `ja_JP`,
-    fbappid: `XXXXXXXXXXXXXXXXXXXXX`,
+    fbappid: `XXXXXXXXXXXXXXXXXXXXX`
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -21,8 +21,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
-      },
+        path: `${__dirname}/src/images/`
+      }
     },
     `gatsby-plugin-react-helmet`,
     {
@@ -34,9 +34,17 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#477294`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
-      },
+        icon: `src/images/icon.png`
+      }
     },
     `gatsby-plugin-offline`,
-  ],
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: process.env.CONTENTFUL_HOST
+      }
+    }
+  ]
 }
