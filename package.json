@@ -24,16 +24,20 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.4",
+    "gatsby-plugin-feed": "^2.5.6",
     "gatsby-plugin-manifest": "^2.3.5",
     "gatsby-plugin-offline": "^3.1.4",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.2.4",
     "gatsby-plugin-sharp": "^2.5.6",
+    "gatsby-plugin-sitemap": "^2.4.6",
     "gatsby-source-contentful": "^2.2.9",
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-transformer-sharp": "^2.4.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "typeface-montserrat-alternates": "^0.0.72"
   },
   "devDependencies": {
     "prettier": "2.0.4"
